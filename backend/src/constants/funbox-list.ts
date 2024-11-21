@@ -370,6 +370,13 @@ const FunboxList: FunboxMetadata[] = [
     frontendFunctions: ["alterText"],
     name: "instant_messaging",
   },
+  {
+    canGetPb: false,
+    difficultyLevel: 0,
+    properties: ["ignoresLanguage", "ignoresLayout", "nospace"],
+    frontendFunctions: ["alterText", "applyConfig", "rememberSettings"],
+    name: "underscore_spaces",
+  },
 ];
 
 export default FunboxList;

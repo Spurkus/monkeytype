@@ -565,6 +565,15 @@ FunboxList.setFunboxFunctions("instant_messaging", {
   },
 });
 
+FunboxList.setFunboxFunctions("underscore_spaces", {
+  rememberSettings(): void {
+    save("highlightMode", Config.highlightMode, UpdateConfig.setHighlightMode);
+  },
+  alterText(word: string): string {
+    return word + "_"; //add underscore at the end instead of space
+  },
+});
+
 export function toggleScript(...params: string[]): void {
   FunboxList.get(Config.funbox).forEach((funbox) => {
     if (funbox.functions?.toggleScript) funbox.functions.toggleScript(params);

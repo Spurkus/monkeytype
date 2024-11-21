@@ -280,6 +280,14 @@ const list: FunboxMetadata[] = [
     info: "Who needs shift anyway?",
     properties: ["changesCapitalisation"],
   },
+  {
+    name: "underscore_spaces",
+    info: "Underscores_are_the_\nnew_spaces.",
+    properties: ["ignoresLanguage", "ignoresLayout", "nospace"],
+    forcedConfig: {
+      highlightMode: ["letter", "off"],
+    },
+  },
 ];
 
 export function getAll(): FunboxMetadata[] {
